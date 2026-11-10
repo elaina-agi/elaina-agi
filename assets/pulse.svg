@@ -1,0 +1,54 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 300" width="1200" height="300" role="img" aria-label="Contribution pulse: 104 contributions in the last 30 days, 20 active days, peak 24 in one day">
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#14122b"/>
+      <stop offset="1" stop-color="#2b2256"/>
+    </linearGradient>
+    <linearGradient id="fade" x1="0" y1="0" x2="1" y2="0">
+      <stop offset="0" stop-color="#a996ff" stop-opacity="0.35"/>
+      <stop offset="1" stop-color="#a996ff"/>
+    </linearGradient>
+    <filter id="glow" x="-20%" y="-20%" width="140%" height="140%">
+      <feGaussianBlur stdDeviation="3" result="b"/>
+      <feMerge><feMergeNode in="b"/><feMergeNode in="SourceGraphic"/></feMerge>
+    </filter>
+    <clipPath id="frame"><rect width="1200" height="300" rx="20"/></clipPath>
+    <path id="trace" pathLength="1000" d="M60.0 214.0 L65.8 214.0 L68.3 211.3 L70.8 214.0 L73.7 217.5 L76.6 175.1 L79.4 221.8 L82.3 214.0 L85.9 208.9 L90.2 214.0 L96.0 214.0 L101.8 214.0 L104.3 210.6 L106.8 214.0 L109.7 218.3 L112.6 165.7 L115.4 223.7 L118.3 214.0 L121.9 207.7 L126.2 214.0 L132.0 214.0 L137.8 214.0 L140.3 211.3 L142.8 214.0 L145.7 217.5 L148.6 175.1 L151.4 221.8 L154.3 214.0 L157.9 208.9 L162.2 214.0 L168.0 214.0 L173.8 214.0 L176.3 207.8 L178.8 214.0 L181.7 221.9 L184.6 125.7 L187.4 231.7 L190.3 214.0 L193.9 202.5 L198.2 214.0 L204.0 214.0 L240.0 214.0 L276.0 214.0 L312.0 214.0 L348.0 214.0 L384.0 214.0 L389.8 214.0 L392.3 209.7 L394.8 214.0 L397.7 219.6 L400.6 152.3 L403.4 226.3 L406.3 214.0 L409.9 206.0 L414.2 214.0 L420.0 214.0 L425.8 214.0 L428.3 209.7 L430.8 214.0 L433.7 219.6 L436.6 152.3 L439.4 226.3 L442.3 214.0 L445.9 206.0 L450.2 214.0 L456.0 214.0 L461.8 214.0 L464.3 208.6 L466.8 214.0 L469.7 220.9 L472.6 137.5 L475.4 229.3 L478.3 214.0 L481.9 204.1 L486.2 214.0 L492.0 214.0 L528.0 214.0 L533.8 214.0 L536.3 209.7 L538.8 214.0 L541.7 219.6 L544.6 152.3 L547.4 226.3 L550.3 214.0 L553.9 206.0 L558.2 214.0 L564.0 214.0 L569.8 214.0 L572.3 205.0 L574.8 214.0 L577.7 225.5 L580.6 86.0 L583.4 239.6 L586.3 214.0 L589.9 197.4 L594.2 214.0 L600.0 214.0 L605.8 214.0 L608.3 207.3 L610.8 214.0 L613.7 222.6 L616.6 118.8 L619.4 233.0 L622.3 214.0 L625.9 201.6 L630.2 214.0 L636.0 214.0 L641.8 214.0 L644.3 210.6 L646.8 214.0 L649.7 218.3 L652.6 165.7 L655.4 223.7 L658.3 214.0 L661.9 207.7 L666.2 214.0 L672.0 214.0 L677.8 214.0 L680.3 208.4 L682.8 214.0 L685.7 221.3 L688.6 133.3 L691.4 230.1 L694.3 214.0 L697.9 203.5 L702.2 214.0 L708.0 214.0 L713.8 214.0 L716.3 209.0 L718.8 214.0 L721.7 220.5 L724.6 142.0 L727.4 228.4 L730.3 214.0 L733.9 204.6 L738.2 214.0 L744.0 214.0 L780.0 214.0 L816.0 214.0 L821.8 214.0 L824.3 210.6 L826.8 214.0 L829.7 218.3 L832.6 165.7 L835.4 223.7 L838.3 214.0 L841.9 207.7 L846.2 214.0 L852.0 214.0 L857.8 214.0 L860.3 210.6 L862.8 214.0 L865.7 218.3 L868.6 165.7 L871.4 223.7 L874.3 214.0 L877.9 207.7 L882.2 214.0 L888.0 214.0 L924.0 214.0 L929.8 214.0 L932.3 209.7 L934.8 214.0 L937.7 219.6 L940.6 152.3 L943.4 226.3 L946.3 214.0 L949.9 206.0 L954.2 214.0 L960.0 214.0 L965.8 214.0 L968.3 210.1 L970.8 214.0 L973.7 219.0 L976.6 158.4 L979.4 225.1 L982.3 214.0 L985.9 206.8 L990.2 214.0 L996.0 214.0 L1032.0 214.0 L1037.8 214.0 L1040.3 211.3 L1042.8 214.0 L1045.7 217.5 L1048.6 175.1 L1051.4 221.8 L1054.3 214.0 L1057.9 208.9 L1062.2 214.0 L1068.0 214.0 L1073.8 214.0 L1076.3 209.3 L1078.8 214.0 L1081.7 220.0 L1084.6 146.9 L1087.4 227.4 L1090.3 214.0 L1093.9 205.3 L1098.2 214.0 L1104.0 214.0 L1109.8 214.0 L1112.3 210.6 L1114.8 214.0 L1117.7 218.3 L1120.6 165.7 L1123.4 223.7 L1126.3 214.0 L1129.9 207.7 L1134.2 214.0 L1140.0 214.0"/>
+    <style>
+      .sans { font-family: 'Segoe UI', -apple-system, BlinkMacSystemFont, 'Helvetica Neue', Arial, sans-serif; }
+      .mono { font-family: ui-monospace, 'SF Mono', 'Cascadia Code', Consolas, 'Liberation Mono', monospace; }
+      .grid line { stroke: #ffffff; stroke-opacity: 0.05; }
+      .ghost { fill: none; stroke: #a996ff; stroke-opacity: 0.22; stroke-width: 2; stroke-linejoin: round; }
+      .live { fill: none; stroke: url(#fade); stroke-width: 2.6; stroke-linejoin: round; stroke-linecap: round;
+               stroke-dasharray: 1000; stroke-dashoffset: 1000; animation: draw 7s linear infinite; }
+      .heart { transform-origin: 72px 38px; animation: beat 1.1s ease-in-out infinite; }
+      .dot { opacity: 0; }
+      @keyframes draw { 0% { stroke-dashoffset: 1000; } 72% { stroke-dashoffset: 0; } 92% { stroke-dashoffset: 0; opacity: 1; } 100% { stroke-dashoffset: 0; opacity: 0; } }
+      @keyframes beat { 0%, 100% { transform: scale(1); } 14% { transform: scale(1.28); } 28% { transform: scale(1); } 42% { transform: scale(1.16); } 56% { transform: scale(1); } }
+      @media (prefers-reduced-motion: reduce) {
+        .live { animation: none; stroke-dashoffset: 0; }
+        .heart { animation: none; }
+      }
+    </style>
+  </defs>
+
+  <g clip-path="url(#frame)">
+    <rect width="1200" height="300" fill="url(#bg)"/>
+    <g class="grid"><line x1="60" y1="70" x2="1140" y2="70"/><line x1="60" y1="94" x2="1140" y2="94"/><line x1="60" y1="118" x2="1140" y2="118"/><line x1="60" y1="142" x2="1140" y2="142"/><line x1="60" y1="166" x2="1140" y2="166"/><line x1="60" y1="190" x2="1140" y2="190"/><line x1="60" y1="214" x2="1140" y2="214"/><line x1="60" y1="238" x2="1140" y2="238"/><line x1="60.0" y1="62" x2="60.0" y2="246"/><line x1="240.0" y1="62" x2="240.0" y2="246"/><line x1="420.0" y1="62" x2="420.0" y2="246"/><line x1="600.0" y1="62" x2="600.0" y2="246"/><line x1="780.0" y1="62" x2="780.0" y2="246"/><line x1="960.0" y1="62" x2="960.0" y2="246"/><line x1="1140.0" y1="62" x2="1140.0" y2="246"/></g>
+
+    <path class="heart" fill="#ff7a9c" d="M72 46 l-9.4 -9.2 a5.6 5.6 0 0 1 7.9 -7.9 l1.5 1.5 1.5 -1.5 a5.6 5.6 0 0 1 7.9 7.9z"/>
+    <text x="92" y="44" class="mono" font-size="17" fill="#b9a9ff" letter-spacing="2">CONTRIBUTION PULSE</text>
+    <text x="1140" y="44" class="sans" font-size="17" fill="#d6d0f2" text-anchor="end"><tspan fill="#ffd76a" font-weight="700">104</tspan> contributions · 20 active days · last 30 days</text>
+
+    <use href="#trace" class="ghost"/>
+    <use href="#trace" class="live" filter="url(#glow)"/>
+    <text x="580.6" y="74.0" text-anchor="middle" class="mono" font-size="13" fill="#ffd76a">24</text>
+
+    <circle class="dot" r="5" fill="#ffd76a" filter="url(#glow)">
+      <animateMotion dur="7s" repeatCount="indefinite" keyPoints="0;1;1" keyTimes="0;0.72;1" calcMode="linear"><mpath href="#trace"/></animateMotion>
+      <animate attributeName="opacity" dur="7s" repeatCount="indefinite" values="1;1;0;0" keyTimes="0;0.72;0.76;1"/>
+    </circle>
+
+    <g class="mono" font-size="12" fill="#8d84b8"><text x="78.0" y="270" text-anchor="middle">Oct 12</text><text x="258.0" y="270" text-anchor="middle">Oct 17</text><text x="438.0" y="270" text-anchor="middle">Oct 22</text><text x="618.0" y="270" text-anchor="middle">Oct 27</text><text x="798.0" y="270" text-anchor="middle">Nov 1</text><text x="978.0" y="270" text-anchor="middle">Nov 6</text><text x="1122.0" y="270" text-anchor="middle">Nov 10</text></g>
+  </g>
+</svg>

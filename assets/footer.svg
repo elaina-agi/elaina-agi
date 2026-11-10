@@ -1,0 +1,107 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 190" width="1200" height="190" role="img" aria-label="A little witch on a broom flies across the night sky. Thanks for stopping by.">
+  <defs>
+    <linearGradient id="sky" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#14122b"/>
+      <stop offset="0.55" stop-color="#241d4d"/>
+      <stop offset="1" stop-color="#3a2a6b"/>
+    </linearGradient>
+    <linearGradient id="dust" x1="0" y1="0" x2="1" y2="0">
+      <stop offset="0" stop-color="#ffd76a" stop-opacity="0"/>
+      <stop offset="1" stop-color="#ffd76a" stop-opacity="0.85"/>
+    </linearGradient>
+    <clipPath id="frame"><rect width="1200" height="190" rx="20"/></clipPath>
+    <style>
+      .sans { font-family: 'Segoe UI', -apple-system, BlinkMacSystemFont, 'Helvetica Neue', Arial, sans-serif; }
+      .mono { font-family: ui-monospace, 'SF Mono', 'Cascadia Code', Consolas, 'Liberation Mono', monospace; }
+      .star { fill: #ffffff; }
+      .gold { fill: #ffd76a; }
+      .tw1 { animation: twinkle 3.2s ease-in-out infinite; }
+      .tw2 { animation: twinkle 4.4s ease-in-out 0.9s infinite; }
+      .tw3 { animation: twinkle 5.6s ease-in-out 1.7s infinite; }
+      .sp1 { animation: spark 1.4s ease-in-out infinite; }
+      .sp2 { animation: spark 1.4s ease-in-out 0.35s infinite; }
+      .sp3 { animation: spark 1.4s ease-in-out 0.7s infinite; }
+      .sp4 { animation: spark 1.4s ease-in-out 1.05s infinite; }
+      .fly { animation: fly 16s linear infinite; }
+      .bob { animation: bob 2.6s ease-in-out infinite; }
+      @keyframes twinkle { 0%, 100% { opacity: 0.25; } 50% { opacity: 1; } }
+      @keyframes spark { 0%, 100% { opacity: 0.15; } 50% { opacity: 1; } }
+      @keyframes fly { 0% { transform: translateX(-120px); } 100% { transform: translateX(1560px); } }
+      @keyframes bob { 0%, 100% { transform: translateY(0); } 50% { transform: translateY(-7px); } }
+      @media (prefers-reduced-motion: reduce) {
+        .tw1, .tw2, .tw3, .sp1, .sp2, .sp3, .sp4, .fly, .bob { animation: none; }
+      }
+    </style>
+  </defs>
+
+  <g clip-path="url(#frame)">
+    <rect width="1200" height="190" fill="url(#sky)"/>
+
+    <g class="star">
+      <circle class="tw1" cx="48" cy="34" r="1.4"/>
+      <circle class="tw2" cx="132" cy="118" r="1.1"/>
+      <circle class="tw3" cx="214" cy="52" r="1.6"/>
+      <circle class="tw1" cx="302" cy="142" r="1"/>
+      <circle class="tw2" cx="388" cy="28" r="1.3"/>
+      <circle class="tw3" cx="476" cy="60" r="1"/>
+      <circle class="tw1" cx="566" cy="26" r="1.5"/>
+      <circle class="tw2" cx="652" cy="54" r="1.1"/>
+      <circle class="tw3" cx="742" cy="30" r="1.4"/>
+      <circle class="tw1" cx="828" cy="146" r="1.1"/>
+      <circle class="tw2" cx="902" cy="44" r="1.6"/>
+      <circle class="tw3" cx="986" cy="126" r="1"/>
+      <circle class="tw1" cx="1062" cy="36" r="1.3"/>
+      <circle class="tw2" cx="1134" cy="96" r="1.5"/>
+      <circle class="tw3" cx="1172" cy="172" r="1.1"/>
+      <circle class="tw1" cx="24" cy="138" r="1.2"/>
+    </g>
+    <g class="gold">
+      <path class="tw2" d="M96 70 l2.4 7 7 2.4 -7 2.4 -2.4 7 -2.4 -7 -7 -2.4 7 -2.4z"/>
+      <path class="tw3" d="M1104 138 l2 6 6 2 -6 2 -2 6 -2 -6 -6 -2 6 -2z"/>
+    </g>
+
+    <!-- closing line -->
+    <text x="600" y="142" text-anchor="middle" class="sans" font-size="26" font-weight="600" fill="#f4f1ff">Thanks for stopping by</text>
+    <text x="600" y="168" text-anchor="middle" class="mono" font-size="14" fill="#9d93c9" letter-spacing="1">safe travels, wherever you are headed next</text>
+
+    <!-- the little witch: rests at the right when animation is off -->
+    <g class="fly" transform="translate(1010 0)">
+      <g class="bob">
+        <g transform="translate(0 88)">
+          <!-- stardust trail -->
+          <rect x="-330" y="6" width="240" height="2.4" rx="1.2" fill="url(#dust)"/>
+          <g class="gold">
+            <path class="sp1" d="M-112 -6 l2 6 6 2 -6 2 -2 6 -2 -6 -6 -2 6 -2z"/>
+            <path class="sp2" d="M-156 16 l1.6 4.8 4.8 1.6 -4.8 1.6 -1.6 4.8 -1.6 -4.8 -4.8 -1.6 4.8 -1.6z"/>
+            <path class="sp3" d="M-204 -4 l1.4 4.2 4.2 1.4 -4.2 1.4 -1.4 4.2 -1.4 -4.2 -4.2 -1.4 4.2 -1.4z"/>
+            <path class="sp4" d="M-256 14 l1.2 3.6 3.6 1.2 -3.6 1.2 -1.2 3.6 -1.2 -3.6 -3.6 -1.2 3.6 -1.2z"/>
+            <circle class="sp2" cx="-132" cy="12" r="1.6"/>
+            <circle class="sp4" cx="-182" cy="2" r="1.3"/>
+            <circle class="sp1" cx="-230" cy="10" r="1.1"/>
+            <circle class="sp3" cx="-292" cy="4" r="1"/>
+          </g>
+
+          <!-- broom -->
+          <path d="M-46 9 L-84 -3 L-77 8 L-88 19 Z" fill="#f0b33c"/>
+          <path d="M-50 6 L-44 5 L-44 12 L-50 12 Z" fill="#8f7cf0"/>
+          <line x1="-48" y1="9" x2="54" y2="-3" stroke="#d9b98a" stroke-width="3.2" stroke-linecap="round"/>
+
+          <!-- cape, body, legs -->
+          <path d="M-6 -24 C-26 -22 -42 -12 -56 0 C-38 -6 -22 -5 -8 3 Z" fill="#6d5ae6"/>
+          <path d="M-12 6 C-16 -14 -8 -28 4 -30 C15 -28 20 -12 17 3 Z" fill="#8f7cf0"/>
+          <path d="M8 1 L30 6 L33 11 L29 13 L8 8 Z" fill="#3a2f78"/>
+          <path d="M6 -22 C14 -18 22 -12 28 -5 L25 -2 C18 -9 11 -13 4 -15 Z" fill="#8f7cf0"/>
+
+          <!-- hair, head, hat -->
+          <path d="M-2 -42 C-18 -42 -30 -34 -42 -24 C-28 -28 -16 -27 -4 -30 Z" fill="#f4f1ff"/>
+          <circle cx="5" cy="-37" r="8.5" fill="#fbeee6"/>
+          <path d="M-3 -40 C-1 -47 8 -49 13 -43 C8 -45 2 -44 -3 -40 Z" fill="#f4f1ff"/>
+          <ellipse cx="4" cy="-45" rx="19" ry="4.2" fill="#221b47" stroke="#8f7cf0" stroke-width="1" transform="rotate(-7 4 -45)"/>
+          <path d="M-8 -45 C-8 -58 -14 -68 -26 -74 C-8 -76 10 -66 15 -48 Z" fill="#221b47" stroke="#8f7cf0" stroke-width="1"/>
+          <path d="M-8 -47 C0 -44 8 -45 15 -49 L15.6 -46 C8 -42 0 -41 -8 -44 Z" fill="#8f7cf0"/>
+          <path d="M4 -52 l1.4 4 4 1.4 -4 1.4 -1.4 4 -1.4 -4 -4 -1.4 4 -1.4z" fill="#ffd76a"/>
+        </g>
+      </g>
+    </g>
+  </g>
+</svg>

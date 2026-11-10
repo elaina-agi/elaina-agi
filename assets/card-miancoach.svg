@@ -1,0 +1,57 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 580 250" width="580" height="250" role="img" aria-label="MianCoach — an AI interview coach built on RAG. Java 17, Spring Boot 3, pgvector, Vue 3.">
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#17142f"/>
+      <stop offset="1" stop-color="#2b2256"/>
+    </linearGradient>
+    <linearGradient id="accent" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#a996ff"/>
+      <stop offset="1" stop-color="#6d5ae6"/>
+    </linearGradient>
+    <style>
+      .sans { font-family: 'Segoe UI', -apple-system, BlinkMacSystemFont, 'Helvetica Neue', Arial, sans-serif; }
+      .mono { font-family: ui-monospace, 'SF Mono', 'Cascadia Code', Consolas, 'Liberation Mono', monospace; }
+      .pulse { animation: pulse 2.8s ease-in-out infinite; transform-origin: 522px 52px; }
+      @keyframes pulse { 0%, 100% { opacity: 0.45; transform: scale(1); } 50% { opacity: 1; transform: scale(1.12); } }
+      @media (prefers-reduced-motion: reduce) { .pulse { animation: none; } }
+    </style>
+  </defs>
+
+  <rect x="0.5" y="0.5" width="579" height="249" rx="16" fill="url(#bg)" stroke="#40367a"/>
+  <rect x="0.5" y="28" width="5" height="64" rx="2.5" fill="url(#accent)"/>
+
+  <!-- chat-bubble glyph -->
+  <g class="pulse">
+    <path d="M500 34 h44 a8 8 0 0 1 8 8 v20 a8 8 0 0 1 -8 8 h-26 l-10 9 v-9 h-8 a8 8 0 0 1 -8 -8 v-20 a8 8 0 0 1 8 -8z" fill="none" stroke="#a996ff" stroke-width="2"/>
+    <circle cx="510" cy="52" r="2.4" fill="#ffd76a"/>
+    <circle cx="522" cy="52" r="2.4" fill="#ffd76a"/>
+    <circle cx="534" cy="52" r="2.4" fill="#ffd76a"/>
+  </g>
+
+  <text x="30" y="58" class="sans" font-size="27" font-weight="700" fill="#f4f1ff">MianCoach</text>
+  <text x="30" y="84" class="sans" font-size="17" fill="#b9a9ff">An AI interview coach built on RAG</text>
+
+  <g class="sans" font-size="16" fill="#d6d0f2">
+    <circle cx="35" cy="117" r="2.5" fill="#ffd76a"/>
+    <text x="48" y="122">Streamed answers with citations you can open and verify</text>
+    <circle cx="35" cy="143" r="2.5" fill="#ffd76a"/>
+    <text x="48" y="148">Mock interviews graded against the source material</text>
+    <circle cx="35" cy="169" r="2.5" fill="#ffd76a"/>
+    <text x="48" y="174">Vector recall + cross-encoder rerank, with model fallback</text>
+  </g>
+
+  <g class="mono" font-size="13" fill="#e4dfff">
+    <rect x="30" y="200" width="68" height="26" rx="13" fill="#3a2f78"/>
+    <text x="64" y="217" text-anchor="middle">Java 17</text>
+    <rect x="106" y="200" width="110" height="26" rx="13" fill="#3a2f78"/>
+    <text x="161" y="217" text-anchor="middle">Spring Boot 3</text>
+    <rect x="224" y="200" width="78" height="26" rx="13" fill="#3a2f78"/>
+    <text x="263" y="217" text-anchor="middle">pgvector</text>
+    <rect x="310" y="200" width="58" height="26" rx="13" fill="#3a2f78"/>
+    <text x="339" y="217" text-anchor="middle">Vue 3</text>
+    <rect x="376" y="200" width="66" height="26" rx="13" fill="#3a2f78"/>
+    <text x="409" y="217" text-anchor="middle">Docker</text>
+  </g>
+
+  <text x="550" y="218" class="sans" font-size="20" fill="#a996ff" text-anchor="end">→</text>
+</svg>

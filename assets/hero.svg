@@ -1,0 +1,117 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 320" width="1200" height="320" role="img" aria-label="Hi, I'm Elaina — anime watcher, music lover, code tinkerer">
+  <defs>
+    <linearGradient id="sky" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#14122b"/>
+      <stop offset="0.55" stop-color="#241d4d"/>
+      <stop offset="1" stop-color="#3a2a6b"/>
+    </linearGradient>
+    <radialGradient id="moonGlow" cx="0.5" cy="0.5" r="0.5">
+      <stop offset="0" stop-color="#ffe9a8" stop-opacity="0.55"/>
+      <stop offset="1" stop-color="#ffe9a8" stop-opacity="0"/>
+    </radialGradient>
+    <linearGradient id="trail" x1="0" y1="0" x2="1" y2="0">
+      <stop offset="0" stop-color="#ffffff" stop-opacity="0"/>
+      <stop offset="1" stop-color="#ffffff" stop-opacity="0.9"/>
+    </linearGradient>
+    <clipPath id="frame"><rect width="1200" height="320" rx="20"/></clipPath>
+    <clipPath id="typed">
+      <rect x="80" y="196" height="40" width="640">
+        <animate attributeName="width" from="0" to="640" begin="0s" dur="3.4s" fill="freeze"/>
+      </rect>
+    </clipPath>
+    <style>
+      .sans { font-family: 'Segoe UI', -apple-system, BlinkMacSystemFont, 'Helvetica Neue', Arial, sans-serif; }
+      .mono { font-family: ui-monospace, 'SF Mono', 'Cascadia Code', Consolas, 'Liberation Mono', monospace; }
+      .star { fill: #ffffff; }
+      .tw1 { animation: twinkle 3.2s ease-in-out infinite; }
+      .tw2 { animation: twinkle 4.4s ease-in-out 0.9s infinite; }
+      .tw3 { animation: twinkle 5.6s ease-in-out 1.7s infinite; }
+      .gold { fill: #ffd76a; }
+      .float { animation: float 6s ease-in-out infinite; }
+      .caret { animation: blink 1s steps(1) infinite; }
+      .shoot { animation: shoot 9s linear 2s infinite; opacity: 0; }
+      @keyframes twinkle { 0%, 100% { opacity: 0.25; } 50% { opacity: 1; } }
+      @keyframes float { 0%, 100% { transform: translateY(0); } 50% { transform: translateY(-8px); } }
+      @keyframes blink { 0%, 49% { opacity: 1; } 50%, 100% { opacity: 0; } }
+      @keyframes shoot {
+        0% { transform: translate(0, 0); opacity: 0; }
+        2% { opacity: 1; }
+        9% { transform: translate(-360px, 150px); opacity: 0; }
+        100% { transform: translate(-360px, 150px); opacity: 0; }
+      }
+      @media (prefers-reduced-motion: reduce) {
+        .tw1, .tw2, .tw3, .float, .caret, .shoot { animation: none; }
+      }
+    </style>
+  </defs>
+
+  <g clip-path="url(#frame)">
+    <rect width="1200" height="320" fill="url(#sky)"/>
+
+    <!-- stars -->
+    <g class="star">
+      <circle class="tw1" cx="62" cy="48" r="1.6"/>
+      <circle class="tw2" cx="148" cy="92" r="1.1"/>
+      <circle class="tw3" cx="236" cy="36" r="1.4"/>
+      <circle class="tw1" cx="318" cy="74" r="1"/>
+      <circle class="tw2" cx="402" cy="30" r="1.7"/>
+      <circle class="tw3" cx="486" cy="96" r="1.1"/>
+      <circle class="tw1" cx="560" cy="44" r="1.3"/>
+      <circle class="tw2" cx="644" cy="78" r="1"/>
+      <circle class="tw3" cx="716" cy="28" r="1.6"/>
+      <circle class="tw1" cx="792" cy="112" r="1.1"/>
+      <circle class="tw2" cx="846" cy="52" r="1.4"/>
+      <circle class="tw3" cx="1128" cy="40" r="1.3"/>
+      <circle class="tw1" cx="1164" cy="128" r="1"/>
+      <circle class="tw2" cx="1096" cy="222" r="1.5"/>
+      <circle class="tw3" cx="1150" cy="284" r="1.1"/>
+      <circle class="tw1" cx="760" cy="262" r="1.2"/>
+      <circle class="tw2" cx="830" cy="204" r="1"/>
+      <circle class="tw3" cx="690" cy="290" r="1.4"/>
+      <circle class="tw1" cx="42" cy="270" r="1.1"/>
+      <circle class="tw2" cx="26" cy="160" r="1.4"/>
+    </g>
+
+    <!-- four-point gold stars -->
+    <g class="gold">
+      <path class="tw2" d="M882 150 l3 9 9 3 -9 3 -3 9 -3 -9 -9 -3 9 -3z"/>
+      <path class="tw1" d="M1070 70 l2.4 7 7 2.4 -7 2.4 -2.4 7 -2.4 -7 -7 -2.4 7 -2.4z"/>
+      <path class="tw3" d="M730 170 l2 6 6 2 -6 2 -2 6 -2 -6 -6 -2 6 -2z"/>
+    </g>
+
+    <!-- shooting star -->
+    <g class="shoot">
+      <rect x="1040" y="38" width="90" height="2" rx="1" fill="url(#trail)" transform="rotate(-22.6 1085 39)"/>
+    </g>
+
+    <!-- moon + witch hat -->
+    <circle cx="985" cy="150" r="150" fill="url(#moonGlow)"/>
+    <circle cx="985" cy="150" r="78" fill="#ffe9a8"/>
+    <circle cx="958" cy="128" r="11" fill="#f3d98a" opacity="0.7"/>
+    <circle cx="1012" cy="176" r="16" fill="#f3d98a" opacity="0.55"/>
+    <circle cx="1006" cy="118" r="6" fill="#f3d98a" opacity="0.6"/>
+
+    <g class="float">
+      <g transform="translate(985 196)">
+        <ellipse cx="0" cy="6" rx="112" ry="20" fill="#1a1536"/>
+        <path d="M-58 4 C-44 -62 -8 -112 62 -150 C40 -112 44 -64 60 4 Z" fill="#221b47"/>
+        <path d="M62 -150 C84 -146 96 -128 90 -108 C84 -122 74 -128 60 -126 Z" fill="#221b47"/>
+        <path d="M-56 -8 C-20 2 26 2 58 -8 L60 4 C26 14 -22 14 -58 4 Z" fill="#8f7cf0"/>
+        <path d="M2 -14 l3.2 9.6 9.6 3.2 -9.6 3.2 -3.2 9.6 -3.2 -9.6 -9.6 -3.2 9.6 -3.2z" fill="#ffd76a"/>
+      </g>
+    </g>
+
+    <!-- text -->
+    <text x="80" y="92" class="mono" font-size="20" fill="#b9a9ff" letter-spacing="1">@elaina-agi</text>
+    <text x="78" y="168" class="sans" font-size="76" font-weight="700" fill="#f4f1ff" letter-spacing="-1">Hi, I'm Elaina</text>
+
+    <g clip-path="url(#typed)">
+      <text x="80" y="224" class="mono" font-size="24" fill="#d9d2ff">Anime watcher · Music lover · Code tinkerer</text>
+    </g>
+    <rect class="caret" x="708" y="202" width="3" height="28" fill="#ffd76a">
+      <animate attributeName="x" from="80" to="708" begin="0s" dur="3.4s" fill="freeze"/>
+    </rect>
+
+    <text x="80" y="276" class="sans" font-size="18" fill="#9d93c9">Wandering through code the way a certain witch wanders the world.</text>
+  </g>
+</svg>

@@ -1,0 +1,31 @@
+name: Generate contribution snake
+
+# Draws a snake eating the contribution grid and publishes the SVGs
+# to the `output` branch, so main stays free of generated commits.
+on:
+  schedule:
+    - cron: '43 22 * * *'   # 06:43 Beijing time, daily
+  workflow_dispatch:
+
+permissions:
+  contents: write
+
+jobs:
+  snake:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Generate snake
+        uses: Platane/snk/svg-only@v3
+        with:
+          github_user_name: ${{ github.repository_owner }}
+          outputs: |
+            dist/snake.svg?color_snake=#f0b33c&color_dots=#ece9fb,#cfc5ff,#a996ff,#7d68ee,#5a45d6
+            dist/snake-dark.svg?color_snake=#ffd76a&color_dots=#221d45,#3a2f78,#6d5ae6,#a996ff,#d6ccff
+
+      - name: Publish to output branch
+        uses: crazy-max/ghaction-github-pages@v4
+        with:
+          target_branch: output
+          build_dir: dist
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
