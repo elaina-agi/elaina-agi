@@ -39,9 +39,6 @@
         9% { transform: translate(-360px, 150px); opacity: 0; }
         100% { transform: translate(-360px, 150px); opacity: 0; }
       }
-      @media (prefers-reduced-motion: reduce) {
-        .tw1, .tw2, .tw3, .float, .caret, .shoot { animation: none; }
-      }
     </style>
   </defs>
 

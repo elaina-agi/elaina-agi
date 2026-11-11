@@ -14,7 +14,6 @@
       .mono { font-family: ui-monospace, 'SF Mono', 'Cascadia Code', Consolas, 'Liberation Mono', monospace; }
       .scan { animation: scan 2.6s ease-in-out infinite; }
       @keyframes scan { 0%, 100% { transform: translateY(0); } 50% { transform: translateY(34px); } }
-      @media (prefers-reduced-motion: reduce) { .scan { animation: none; } }
     </style>
   </defs>
 

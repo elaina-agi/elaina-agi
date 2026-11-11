@@ -13,7 +13,6 @@
       .mono { font-family: ui-monospace, 'SF Mono', 'Cascadia Code', Consolas, 'Liberation Mono', monospace; }
       .pulse { animation: pulse 2.8s ease-in-out infinite; transform-origin: 522px 52px; }
       @keyframes pulse { 0%, 100% { opacity: 0.45; transform: scale(1); } 50% { opacity: 1; transform: scale(1.12); } }
-      @media (prefers-reduced-motion: reduce) { .pulse { animation: none; } }
     </style>
   </defs>
 

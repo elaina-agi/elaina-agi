@@ -28,9 +28,6 @@
       @keyframes spark { 0%, 100% { opacity: 0.15; } 50% { opacity: 1; } }
       @keyframes fly { 0% { transform: translateX(-120px); } 100% { transform: translateX(1560px); } }
       @keyframes bob { 0%, 100% { transform: translateY(0); } 50% { transform: translateY(-7px); } }
-      @media (prefers-reduced-motion: reduce) {
-        .tw1, .tw2, .tw3, .sp1, .sp2, .sp3, .sp4, .fly, .bob { animation: none; }
-      }
     </style>
   </defs>
 

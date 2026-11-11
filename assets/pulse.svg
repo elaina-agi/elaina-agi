@@ -25,10 +25,6 @@
       .dot { opacity: 0; }
       @keyframes draw { 0% { stroke-dashoffset: 1000; } 72% { stroke-dashoffset: 0; } 92% { stroke-dashoffset: 0; opacity: 1; } 100% { stroke-dashoffset: 0; opacity: 0; } }
       @keyframes beat { 0%, 100% { transform: scale(1); } 14% { transform: scale(1.28); } 28% { transform: scale(1); } 42% { transform: scale(1.16); } 56% { transform: scale(1); } }
-      @media (prefers-reduced-motion: reduce) {
-        .live { animation: none; stroke-dashoffset: 0; }
-        .heart { animation: none; }
-      }
     </style>
   </defs>
 

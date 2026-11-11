@@ -9,7 +9,6 @@
       .mono { font-family: ui-monospace, 'SF Mono', 'Cascadia Code', Consolas, 'Liberation Mono', monospace; }
       .tw { animation: tw 2.4s ease-in-out infinite; }
       @keyframes tw { 0%, 100% { opacity: 0.3; } 50% { opacity: 1; } }
-      @media (prefers-reduced-motion: reduce) { .tw { animation: none; } }
     </style>
   </defs>
   <rect x="0.5" y="0.5" width="379" height="149" rx="14" fill="url(#bg)" stroke="#40367a"/>
