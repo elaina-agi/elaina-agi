@@ -163,7 +163,7 @@ def build(days):
       <animate attributeName="opacity" dur="7s" repeatCount="indefinite" values="1;1;0;0" keyTimes="0;0.72;0.76;1"/>
     </circle>
 
-    <g class="mono" font-size="12" fill="#8d84b8">{ticks}</g>
+    <g class="mono" font-size="12" fill="#9a92c4">{ticks}</g>
   </g>
 </svg>
 """

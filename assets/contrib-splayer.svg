@@ -16,6 +16,6 @@
   <text x="76" y="38.5" text-anchor="middle" class="mono" font-size="11.5" fill="#ffd76a" letter-spacing="1.5">CONTRIBUTOR</text>
   <path d="M322 58 v-30 l22 -6 v30" fill="none" stroke="#a996ff" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"/><ellipse cx="315.5" cy="58" rx="6.5" ry="5" fill="#a996ff"/><ellipse cx="337.5" cy="52" rx="6.5" ry="5" fill="#a996ff"/><path class="tw" d="M352 24 l2.2 6.6 6.6 2.2 -6.6 2.2 -2.2 6.6 -2.2 -6.6 -6.6 -2.2 6.6 -2.2z" fill="#ffd76a"/>
   <text x="22" y="86" class="sans" font-size="25" font-weight="700" fill="#f4f1ff">SPlayer</text>
-  <text x="22" y="107" class="mono" font-size="12" fill="#8d84b8">SPlayer-Dev/SPlayer</text>
+  <text x="22" y="107" class="mono" font-size="12" fill="#9a92c4">SPlayer-Dev/SPlayer</text>
   <text x="22" y="131" class="sans" font-size="14.5" fill="#d6d0f2">Music player with word-by-word lyrics</text>
 </svg>
