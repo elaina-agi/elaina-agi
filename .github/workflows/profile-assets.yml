@@ -1,19 +1,29 @@
-name: Generate contribution snake
+name: Generate profile assets
 
-# Draws a snake eating the contribution grid and publishes the SVGs
-# to the `output` branch, so main stays free of generated commits.
+# Draws the contribution snake and the contribution pulse, then publishes
+# both SVGs to the `output` branch, so main stays free of generated commits.
+# One job on purpose: the publish step replaces the whole branch, so two
+# separate workflows would wipe each other's files.
 on:
   schedule:
     - cron: '43 22 * * *'   # 06:43 Beijing time, daily
+  push:
+    branches: [main]
   workflow_dispatch:
 
 permissions:
   contents: write
 
+concurrency:
+  group: profile-assets
+  cancel-in-progress: true
+
 jobs:
-  snake:
+  generate:
     runs-on: ubuntu-latest
     steps:
+      - uses: actions/checkout@v4
+
       - name: Generate snake
         uses: Platane/snk/svg-only@v3
         with:
@@ -21,6 +31,12 @@ jobs:
           outputs: |
             dist/snake.svg?color_snake=#f0b33c&color_dots=#ece9fb,#cfc5ff,#a996ff,#7d68ee,#5a45d6
             dist/snake-dark.svg?color_snake=#ffd76a&color_dots=#221d45,#3a2f78,#6d5ae6,#a996ff,#d6ccff
+
+      - name: Draw pulse
+        env:
+          GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+          PULSE_LOGIN: ${{ github.repository_owner }}
+        run: python3 scripts/pulse.py
 
       - name: Publish to output branch
         uses: crazy-max/ghaction-github-pages@v4

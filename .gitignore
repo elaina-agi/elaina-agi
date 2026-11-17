@@ -1,0 +1,5 @@
+__pycache__/
+*.pyc
+
+# generated locally by scripts/pulse.py; CI publishes it to the `output` branch
+dist/

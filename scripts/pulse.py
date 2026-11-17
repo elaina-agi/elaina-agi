@@ -1,12 +1,14 @@
 """Draw the last 30 days of GitHub contributions as an ECG-style trace.
 
 Each day is one heartbeat; the height of the spike follows that day's
-contribution count. Output: assets/pulse.svg
+contribution count. Output: dist/pulse.svg (override with PULSE_OUT).
 
 Usage:
     GH_TOKEN=<token> python scripts/pulse.py [login]
 
-In GitHub Actions the built-in GITHUB_TOKEN is enough.
+In GitHub Actions the built-in GITHUB_TOKEN is enough. The workflow
+publishes dist/ to the `output` branch, which is where the README reads
+the image from.
 """
 
 import json
@@ -19,7 +21,7 @@ from pathlib import Path
 
 LOGIN = sys.argv[1] if len(sys.argv) > 1 else os.environ.get("PULSE_LOGIN", "elaina-agi")
 DAYS = 30
-OUT = Path(__file__).resolve().parent.parent / "assets" / "pulse.svg"
+OUT = Path(os.environ.get("PULSE_OUT") or Path(__file__).resolve().parent.parent / "dist" / "pulse.svg")
 
 W, H = 1200, 300
 LEFT, RIGHT = 60, 1140
@@ -169,6 +171,7 @@ def build(days):
 
 def main():
     days = fetch_days()
+    OUT.parent.mkdir(parents=True, exist_ok=True)
     OUT.write_text(build(days), encoding="utf-8", newline="\n")
     print(f"wrote {OUT} ({sum(c for _, c in days)} contributions over {len(days)} days)")
 

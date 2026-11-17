@@ -33,10 +33,21 @@
 
 **[OCR Translate](https://github.com/elaina-agi/ocr-translate)** is a small Windows tray app. Press `Ctrl+Shift+T`, drag a box over anything on screen, and the translation shows up in a floating window. OCR runs locally.
 
+<p align="center">
+  <a href="https://github.com/elaina-agi/ireina">
+    <img src="assets/card-blog.svg" width="49%" alt="Elaina's Blog — a Material 3 anime-style blog (Astro, Svelte, TypeScript, Pagefind)" />
+  </a>
+  <a href="https://blog.eriiagi.com">
+    <img src="assets/shot-blog.png" width="49%" alt="The blog's home page: a banner with the site title, then a profile sidebar and a list of posts" />
+  </a>
+</p>
+
+**[My blog](https://github.com/elaina-agi/ireina)** is where the write-ups for these projects live. It runs on Astro with the Shirone theme. **Read it at [blog.eriiagi.com](https://blog.eriiagi.com).**
+
 ## Pulse
 
 <p align="center">
-  <img src="assets/pulse.svg" width="100%" alt="Contribution pulse: my GitHub activity over the last 30 days drawn as an ECG trace" />
+  <img src="https://raw.githubusercontent.com/elaina-agi/elaina-agi/output/pulse.svg" width="100%" alt="Contribution pulse: my GitHub activity over the last 30 days drawn as an ECG trace" />
 </p>
 
 ## Contributor to

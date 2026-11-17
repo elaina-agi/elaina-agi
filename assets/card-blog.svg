@@ -1,0 +1,57 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 580 250" width="580" height="250" role="img" aria-label="Elaina's Blog — a Material 3 anime-style blog. Astro, Svelte, TypeScript, Pagefind.">
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#17142f"/>
+      <stop offset="1" stop-color="#2b2256"/>
+    </linearGradient>
+    <linearGradient id="accent" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#f3b0ff"/>
+      <stop offset="1" stop-color="#b06de6"/>
+    </linearGradient>
+    <style>
+      .sans { font-family: 'Segoe UI', -apple-system, BlinkMacSystemFont, 'Helvetica Neue', Arial, sans-serif; }
+      .mono { font-family: ui-monospace, 'SF Mono', 'Cascadia Code', Consolas, 'Liberation Mono', monospace; }
+      .ln { animation: ln 3.2s ease-in-out infinite; }
+      .ln2 { animation-delay: 0.4s; }
+      .ln3 { animation-delay: 0.8s; }
+      @keyframes ln { 0%, 100% { opacity: 0.35; } 50% { opacity: 1; } }
+    </style>
+  </defs>
+
+  <rect x="0.5" y="0.5" width="579" height="249" rx="16" fill="url(#bg)" stroke="#40367a"/>
+  <rect x="0.5" y="28" width="5" height="64" rx="2.5" fill="url(#accent)"/>
+
+  <!-- page glyph: a sheet with a folded corner and three lines being written -->
+  <path d="M506 30 h26 l14 14 v30 a6 6 0 0 1 -6 6 h-34 a6 6 0 0 1 -6 -6 v-38 a6 6 0 0 1 6 -6z" fill="none" stroke="#d9a6ff" stroke-width="2" stroke-linejoin="round"/>
+  <path d="M532 30 v14 h14" fill="none" stroke="#d9a6ff" stroke-width="2" stroke-linejoin="round"/>
+  <g stroke="#ffd76a" stroke-width="2.4" stroke-linecap="round">
+    <line class="ln" x1="509" y1="52" x2="530" y2="52"/>
+    <line class="ln ln2" x1="509" y1="61" x2="537" y2="61"/>
+    <line class="ln ln3" x1="509" y1="70" x2="525" y2="70"/>
+  </g>
+
+  <text x="30" y="58" class="sans" font-size="27" font-weight="700" fill="#f4f1ff">Elaina's Blog</text>
+  <text x="30" y="84" class="sans" font-size="17" fill="#e0b3ff">A Material 3 anime-style blog</text>
+
+  <g class="sans" font-size="16" fill="#d6d0f2">
+    <circle cx="35" cy="117" r="2.5" fill="#ffd76a"/>
+    <text x="48" y="122">Write-ups of the things I build, and notes along the way</text>
+    <circle cx="35" cy="143" r="2.5" fill="#ffd76a"/>
+    <text x="48" y="148">Built on the Shirone theme, customised on top</text>
+    <circle cx="35" cy="169" r="2.5" fill="#ffd76a"/>
+    <text x="48" y="174">Full-text search, light and dark, rotating banners</text>
+  </g>
+
+  <g class="mono" font-size="13" fill="#e4dfff">
+    <rect x="30" y="200" width="58" height="26" rx="13" fill="#3a2f78"/>
+    <text x="59" y="217" text-anchor="middle">Astro</text>
+    <rect x="96" y="200" width="66" height="26" rx="13" fill="#3a2f78"/>
+    <text x="129" y="217" text-anchor="middle">Svelte</text>
+    <rect x="170" y="200" width="98" height="26" rx="13" fill="#3a2f78"/>
+    <text x="219" y="217" text-anchor="middle">TypeScript</text>
+    <rect x="276" y="200" width="82" height="26" rx="13" fill="#3a2f78"/>
+    <text x="317" y="217" text-anchor="middle">Pagefind</text>
+  </g>
+
+  <text x="550" y="218" class="sans" font-size="20" fill="#d9a6ff" text-anchor="end">→</text>
+</svg>

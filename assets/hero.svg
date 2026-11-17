@@ -15,8 +15,8 @@
     </linearGradient>
     <clipPath id="frame"><rect width="1200" height="320" rx="20"/></clipPath>
     <clipPath id="typed">
-      <rect x="80" y="196" height="40" width="640">
-        <animate attributeName="width" from="0" to="640" begin="0s" dur="3.4s" fill="freeze"/>
+      <rect x="80" y="196" height="40" width="630">
+        <animate attributeName="width" from="0" to="630" begin="0s" dur="3.4s" fill="freeze"/>
       </rect>
     </clipPath>
     <style>
@@ -103,10 +103,12 @@
     <text x="78" y="168" class="sans" font-size="76" font-weight="700" fill="#f4f1ff" letter-spacing="-1">Hi, I'm Elaina</text>
 
     <g clip-path="url(#typed)">
-      <text x="80" y="224" class="mono" font-size="24" fill="#d9d2ff">Anime watcher · Music lover · Code tinkerer</text>
+      <!-- textLength pins the line to 628px whatever monospace font the viewer has,
+           so the reveal clip and the caret below always end where the text does -->
+      <text x="80" y="224" class="mono" font-size="24" fill="#d9d2ff" textLength="628" lengthAdjust="spacing">Anime watcher · Music lover · Code tinkerer</text>
     </g>
-    <rect class="caret" x="708" y="202" width="3" height="28" fill="#ffd76a">
-      <animate attributeName="x" from="80" to="708" begin="0s" dur="3.4s" fill="freeze"/>
+    <rect class="caret" x="710" y="202" width="3" height="28" fill="#ffd76a">
+      <animate attributeName="x" from="80" to="710" begin="0s" dur="3.4s" fill="freeze"/>
     </rect>
 
     <text x="80" y="276" class="sans" font-size="18" fill="#9d93c9">Wandering through code the way a certain witch wanders the world.</text>
